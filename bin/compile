@@ -25,11 +25,11 @@ PATH=$TEXLIVE_HOME/bin/x86_64-linux:$PATH
 mkdir -p $TEXLIVE_HOME
 mkdir -p $TEXLIVE_CACHE
 
-if [ -f $TEXLIVE_CACHE/PACKAGES-VERSION ] && (( $VERSION == `cat $TEXLIVE_CACHE/PACKAGES-VERSION` )); then
+# if [ -f $TEXLIVE_CACHE/PACKAGES-VERSION ] && (( $VERSION == `cat $TEXLIVE_CACHE/PACKAGES-VERSION` )); then
     # Get TeX Live from the cache if possible
-    build-step "Copying TeX Package Files from cache: Package $VERSION"
-    cp -R $TEXLIVE_CACHE/* $TEXLIVE_HOME
-else
+    # build-step "Copying TeX Package Files from cache: Package $VERSION"
+    # cp -R $TEXLIVE_CACHE/* $TEXLIVE_HOME
+# else
     # Get TeX Live from S3 if necessary
     if [ -f "$TEXLIVE_CACHE/VERSION" ]; then
         build-step "Upgrading TeX packages to $VERSION"
@@ -49,7 +49,7 @@ else
     echo $VERSION > $TEXLIVE_CACHE/PACKAGES-VERSION
 
     build-step "Saved Version #: Package $VERSION"
-fi
+# fi
 
 build-step "Setting Up Package Configuration : Buildling KPathSea Database"
 mktexlsr
