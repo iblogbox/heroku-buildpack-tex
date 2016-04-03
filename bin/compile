@@ -56,6 +56,7 @@ mktexlsr
 build-step "Creating Font Mappings"
 updmap
 updmap --enable Map libertine.map
+updmap --enable Map pdftex.map
 build-step "Formatting and Compiling Packages"
 fmtutil --all
 build-step "Generating Package Hash"
