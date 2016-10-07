@@ -17,7 +17,7 @@ TEXLIVE_DOMAIN="https://cah-buildpacks.s3.amazonaws.com"
 VERSION=10;
 # # TEXLIVE_PACKAGES_URL="$TEXLIVE_DOMAIN/tex-packages-$VERSION.tar.gz"
 # https://storage.googleapis.com/app0124/cdn/tex-packages.tar.gz
-TEXLIVE_PACKAGES_URL="https://storage.googleapis.com/app0124/cdn/tex-packages.tar.gz"
+TEXLIVE_PACKAGES_URL="https://dl.getdropbox.com/s/i78o2abyuo5sf6i/tex-packages.tar.gz"
 TEXLIVE_HOME=$BUILD_DIR/.texlive
 TEXLIVE_CACHE=$CACHE_DIR/.texlive
 PATH=$TEXLIVE_HOME/bin/x86_64-linux:$PATH
@@ -38,7 +38,7 @@ mkdir -p $TEXLIVE_CACHE
         build-step "Fetching TeX packages at $VERSION"
     fi
 
-    curl $TEXLIVE_PACKAGES_URL -s -o - | tar xzf - -C $TEXLIVE_HOME
+    curl $TEXLIVE_PACKAGES_URL -L -s -o - | tar xzf - -C $TEXLIVE_HOME
 
     # # Make sure the cache is empty
     rm -rf $TEXLIVE_CACHE/*
