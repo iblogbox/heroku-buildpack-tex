@@ -16,7 +16,9 @@ TEXLIVE_DOMAIN="https://cah-buildpacks.s3.amazonaws.com"
 # VERSION=`curl $TEXLIVE_DOMAIN/PACKAGES-VERSION -s`
 VERSION=10;
 # # TEXLIVE_PACKAGES_URL="$TEXLIVE_DOMAIN/tex-packages-$VERSION.tar.gz"
-TEXLIVE_PACKAGES_URL="https://dl.getdropbox.com/s/i78o2abyuo5sf6i/tex-packages.tar.gz"
+#TEXLIVE_PACKAGES_URL="https://dl.getdropbox.com/s/i78o2abyuo5sf6i/tex-packages.tar.gz"
+TEXLIVE_PACKAGES_URL="https://storage.googleapis.com/app0124/cdn/tex-packages-1.tar.gz"
+
 TEXLIVE_HOME=$BUILD_DIR/.texlive
 TEXLIVE_CACHE=$CACHE_DIR/.texlive
 PATH=$TEXLIVE_HOME/bin/x86_64-linux:$PATH
