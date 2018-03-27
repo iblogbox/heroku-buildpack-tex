@@ -55,7 +55,7 @@ mkdir -p $TEXLIVE_CACHE
 # fi
 
 build-step "Setting Up Package Configuration : Buildling KPathSea Database"
-mktexlsr
+mktexlsr --syncwithtrees
 build-step "Creating Font Mappings"
 updmap
 updmap --enable Map libertine.map
