@@ -17,8 +17,8 @@ TEXLIVE_DOMAIN="https://cah-buildpacks.s3.amazonaws.com"
 VERSION=10;
 # # TEXLIVE_PACKAGES_URL="$TEXLIVE_DOMAIN/tex-packages-$VERSION.tar.gz"
 #TEXLIVE_PACKAGES_URL="https://dl.getdropbox.com/s/i78o2abyuo5sf6i/tex-packages.tar.gz"
-#TEXLIVE_PACKAGES_URL="https://dl.getdropbox.com/s/ya2np8pbqozgh8j/tex-packages-190M.tar.gz"
-TEXLIVE_PACKAGES_URL="https://storage.googleapis.com/app0124/cdn/tex-packages-120M-2.tar.gz"
+TEXLIVE_PACKAGES_URL="https://dl.getdropbox.com/s/ya2np8pbqozgh8j/tex-packages-190M.tar.gz"
+
 
 TEXLIVE_HOME=$BUILD_DIR/.texlive
 TEXLIVE_CACHE=$CACHE_DIR/.texlive
@@ -55,7 +55,7 @@ mkdir -p $TEXLIVE_CACHE
 # fi
 
 build-step "Setting Up Package Configuration : Buildling KPathSea Database"
-mktexlsr --syncwithtrees
+mktexlsr
 build-step "Creating Font Mappings"
 updmap
 updmap --enable Map libertine.map
