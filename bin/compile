@@ -66,6 +66,7 @@ updmap --enable Map plother.map
 updmap --enable Map pltext.map
 updmap --enable Map txfonts.map
 updmap --enable Map cm-super-ts1.map
+updmap --enable Map marvosym.map
 
 build-step "Formatting and Compiling Packages"
 fmtutil --all
