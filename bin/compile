@@ -59,6 +59,14 @@ mktexlsr
 build-step "Creating Font Mappings"
 updmap
 updmap --enable Map libertine.map
+updmap --enable Map esint.map 
+updmap --enable Map cm-super-t1.map
+updmap --enable Map fourier.map 
+updmap --enable Map plother.map
+updmap --enable Map pltext.map
+updmap --enable Map txfonts.map
+updmap --enable Map cm-super-ts1.map
+
 build-step "Formatting and Compiling Packages"
 fmtutil --all
 build-step "Generating Package Hash"
