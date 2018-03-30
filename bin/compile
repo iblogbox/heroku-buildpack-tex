@@ -70,6 +70,8 @@ updmap --enable Map marvosym.map
 updmap --enable Map rsfs.map
 updmap --enable Map stmaryrd.map
 updmap --enable Map xypic.map
+updmap --enable Map yhmath.map
+updmap --enable Map bera.map
 
 build-step "Formatting and Compiling Packages"
 fmtutil --all
