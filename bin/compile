@@ -72,6 +72,9 @@ updmap --enable Map stmaryrd.map
 updmap --enable Map xypic.map
 updmap --enable Map yhmath.map
 updmap --enable Map bera.map
+updmap --enable Map mdbch.map
+updmap --enable Map vnrtext.map
+updmap --enable Map pxfonts.map
 
 build-step "Formatting and Compiling Packages"
 fmtutil --all
