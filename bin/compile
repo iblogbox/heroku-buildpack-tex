@@ -75,6 +75,7 @@ updmap --enable Map bera.map
 updmap --enable Map mdbch.map
 updmap --enable Map vnrtext.map
 updmap --enable Map pxfonts.map
+updmap --enable Map dstroke.map
 
 build-step "Formatting and Compiling Packages"
 fmtutil --all
