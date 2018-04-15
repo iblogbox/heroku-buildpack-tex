@@ -77,6 +77,7 @@ updmap --enable Map vnrtext.map
 updmap --enable Map pxfonts.map
 updmap --enable Map dstroke.map
 updmap --enable Map eurosym.map
+updmap --enable Map wasy.map
 
 build-step "Formatting and Compiling Packages"
 fmtutil --all
