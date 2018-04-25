@@ -79,6 +79,7 @@ updmap --enable Map dstroke.map
 updmap --enable Map eurosym.map
 updmap --enable Map wasy.map
 updmap --enable Map hfbright.map
+updmap --enable Map lm.map
 
 build-step "Formatting and Compiling Packages"
 fmtutil --all
