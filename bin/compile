@@ -89,6 +89,7 @@ updmap --enable Map fdsymbol.map
 updmap --enable Map merriweather.map
 updmap --enable Map qhv.map
 updmap --enable Map SourceSansPro.map
+updmap --enable Map sansmathaccent.map
 
 build-step "Formatting and Compiling Packages"
 fmtutil --all
