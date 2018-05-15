@@ -91,6 +91,7 @@ updmap --enable Map qhv.map
 updmap --enable Map SourceSansPro.map
 updmap --enable Map sansmathaccent.map
 updmap --enable Map kurier.map
+updmap --enable Map qbk.map
 
 build-step "Formatting and Compiling Packages"
 fmtutil --all
