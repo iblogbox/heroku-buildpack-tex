@@ -83,8 +83,8 @@ updmap --enable Map lm.map
 updmap --enable Map arev.map
 updmap --enable Map MnSymbol.map
 updmap --enable Map kpfonts.map
-updmap --enable Map EBGaramond.map
-updmap --enable Map EBGaramond-Maths.map
+#updmap --enable Map EBGaramond.map
+#updmap --enable Map EBGaramond-Maths.map
 updmap --enable Map fdsymbol.map
 updmap --enable Map merriweather.map
 updmap --enable Map qhv.map
